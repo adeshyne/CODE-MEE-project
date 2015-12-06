@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Code Mee!!</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	<header class="navbar navbar-fixed-top navbar-inverse">
+		<div class="container">
+				<nav>
+					<ul class in-line>
+						<li><%= link_to 'Home', 'welcome.html' %></li>
+                            
+						<li><%= link_to 'Register', 'register.html' %></li>
+
+						<li><%= link_to 'Play', 'play.html' %></li>
+
+						<li><%= link_to 'Scores', 'score.html' %></li>
+					</ul>
+				</nav>
+			</div>
+
+		
+	</header>
+
+	<%= yield %>
+
+	<hr>
+
+	<div class='footer'>
+	<div class='container'>
+		<div class='row'>
+		<div class='col-md-3'>
+			<h4>What is Code Mee?</h4>
+			<p><i>Code Mee </i> is the most fun way to learn how to code and have fun doing it. <a href="register.html">Register to play</a></p>
+			<p><a href="score.html">Compare Scores With Friends<i class='glyphicon glyphicon-arrow-right'></i></a></p>
+			</div>
+
+			<div class='col-md-2 col-md-offset-1'>
+			<h4>Links</h4>
+				<ul class='list-unstyled'>
+					<li><a href='index.html'>Home</a></li>
+					
+					<li><a href='about.html'>About</a></li>
+					<li><a href='play.html'>Test your skills</a></li>
+				</ul>
+			</div>
+
+			<div class='col-md-2'>
+			<h4>Stay in Touch</h4>
+			<ul class='list-unstyled'>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="http://facebook.com/">Facebook</a></li>
+			</ul>
+		</div>
+
+		<div class='col-md-3 col-md-offset-1'>
+		<h4>Contact Us</h4>
+		<ul class='list-unstyled'>
+			<li><i class='glyphicon glyphicon-globe'></i>500 72nd st.Arverne, NY</li>
+			<li><i class='glyphicon glyphicon-phone'></i>1-800-CODE-MEE</li>
+			<li><i class='glyphicon glyphicon-envelope'></i><a href="#">info@codemeebaby.com</a></li>
+		</ul>
+		<p>Code Mee!! &copyright; 2015.</p>
+	</div>
+	</div>
+	</div>
+	</div>
+
+
+</body>
+</html>
